@@ -1,0 +1,29 @@
+name: task-manager
+
+services:
+  api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: java org.springframework.boot.loader.launch.JarLauncher
+    ports:
+      - '8000:8000'
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app/src
+    depends_on:
+      - postgres
+    entrypoint: ./entrypoint.sh
+
+  postgres:
+    image: postgres:17
+    volumes:
+      - pgData:/var/lib/postgresql/data/
+    env_file:
+      - .env
+    ports:
+      - '5432:5432'
+
+volumes:
+  pgData:

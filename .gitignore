@@ -1,0 +1,11 @@
+/upload-dir/
+/target/
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+*mvn*
+*.idea
+*.class
