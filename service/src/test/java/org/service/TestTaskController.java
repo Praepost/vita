@@ -300,7 +300,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
             AllTaskRequest taskRequest = new AllTaskRequest(true, 0);
 
             String tasksResponse = mockMvc.perform(get("/tasks/")
-                    .content(objectMapper.writeValueAsString(taskrequest))
+                    .content(objectMapper.writeValueAsString(taskRequest))
                     .contentType(MediaType.APPLICATION_JSON)
                     .with(user("Оператор").password("Оператор").roles("Оператор"))
             ).andReturn().getResponse().getContentAsString();
