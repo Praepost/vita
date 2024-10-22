@@ -5,4 +5,4 @@ git clonegit@github.com:Praepost/vita.git
 
 chmod +x ./entrypoint.sh
 
-docker-compose up
+docker-compose up --build
