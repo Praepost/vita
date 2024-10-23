@@ -1,5 +1,5 @@
 # КАК ЗАПУСТИТЬ
-# открыть папку для проекта в bash
+# открыть папку для проекта в bash с правами администратора
 
 ```commandline
 git clone git@github.com:Praepost/vita.git
