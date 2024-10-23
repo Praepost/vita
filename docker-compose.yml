@@ -5,13 +5,11 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-    command: java org.springframework.boot.loader.launch.JarLauncher
+    command: java org.springframework.boot.loader.JarLauncher
     ports:
       - '8000:8000'
     env_file:
       - .env
-    volumes:
-      - ./sevice/src:/app/src
     depends_on:
       - postgres
     entrypoint: ./entrypoint.sh
