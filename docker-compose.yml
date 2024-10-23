@@ -1,4 +1,4 @@
-name: task-manager
+name: vita
 
 services:
   api:
@@ -11,7 +11,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./src:/app/src
+      - ./sevice/src:/app/src
     depends_on:
       - postgres
     entrypoint: ./entrypoint.sh

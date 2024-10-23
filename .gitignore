@@ -1,8 +1,10 @@
 /upload-dir/
 /target/
+target
 out/
 .idea/
 .idea_modules/
+.vscode
 *.iml
 *.ipr
 *.iws

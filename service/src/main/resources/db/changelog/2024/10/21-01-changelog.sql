@@ -4,7 +4,7 @@
 CREATE SEQUENCE IF NOT EXISTS hibernate_sequence START WITH 1 INCREMENT BY 1;
 
 -- changeset user:1729522138043-2
-CREATE TABLE role
+CREATE TABLE "role"
 (
     id   BIGINT NOT NULL,
     name VARCHAR(20),
